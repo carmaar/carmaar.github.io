@@ -103,13 +103,13 @@ ul li a:hover {
   justify-content: center;
 }
 
-#landing .fa {
+ #fa {
   padding:5px;
   color:#eeeeee;
   transition: .4s ease;
 }
 
-#landing .fa:hover {
+#fa:hover {
   color:#71a0a5;
   transition: .4s ease;
 }
@@ -205,10 +205,13 @@ h4 {
 
 #down {
   margin:5% 50%;
+  color:white;
+  transition: .4s ease;
 }
 
 #down:hover {
   color:#eeeeee;
+  transition: .4s ease;
   transform: translateY(10px);
 }
 
