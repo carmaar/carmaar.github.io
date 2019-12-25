@@ -121,16 +121,10 @@ ul li a:hover {
   box-shadow:10px 10px 7px #dadada;
 }
 
-h1 {
-  font-size:5em;
-  margin:5px;
-}
-
 h1, h2 {
-  padding:10px;
-  color:#eeeeee;
   display:flex;
   justify-content: center;
+  color:#eeeeee;
   font-family:'Playfair Display SC';
 }
 
@@ -239,3 +233,62 @@ img {
 .nav-up {
   top: -40px;
 }
+
+/* MEDIA QUERIES */
+
+    /* TABLET */
+
+    @media only screen and (max-width: 64em) {
+
+      body {
+          max-width:100%;
+      }
+  }
+
+  /* MOBILE */
+
+  @media only screen and (max-width:37.5em) {
+
+      .container-fluid {
+        width:100%;
+      }
+
+      .card-bg-dark {
+        margin:2em;
+      }
+
+      .card-bg-dark {
+        border-radius:5px;
+        background-color:white;
+        padding:2em;
+      }
+
+      .fp-slides p {
+        font-size:15px;
+        padding:0;
+      }
+
+      .card-img {
+        width:100%;
+        padding:0;
+      }
+
+      #projects h1 {
+        margin:0;
+        text-align: center;
+      }
+    
+      h1 {
+        text-align:center;
+        font-size:2.5em;
+      }
+
+      h2 {
+        text-align: center;
+        font-size:1.5em;
+      }
+
+      
+
+  }
+
