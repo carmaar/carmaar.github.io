@@ -23,6 +23,7 @@
     
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="css/animate.css">
 
 
     <!-- FONTS -->
@@ -37,6 +38,8 @@
     <!-- JQUERY -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
 
     
     <title>Carly Pennock</title>
@@ -58,10 +61,11 @@
                 <div class="box">
                     <a href="https://github.com/carmaar"><i class="fa fa-github fa-3x" aria-hidden="true" id="fa"></i></a>
                     <a href="https://www.linkedin.com/in/carly-pennock/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true" id="fa"></i></a>
+
+                    <a href="/#slide2"><i class="fa fa-chevron-down" aria-hidden="true" id="down"></i></i></a>
+
                 </div>
-                
-                <a href="/#slide2"><i class="fa fa-chevron-down" aria-hidden="true" id="down"></i></i></a>
-        
+                        
             </div>
         </div> 
         
@@ -69,17 +73,17 @@
 
         <!-- PROJECTS  -->
 
-        <div id="projects" class="section" data anchor="slide2"> 
-                <h1>Let's talk projects.</h1>
+        <div id="projects" class="section" data anchor="slide2">
+                <h1>Let's talk projects.</h1> 
                 <div class="slide" data-anchor="slide2"> 
                     <div class="card-bg-dark text-white">
                             <img class="card-img" src="concepts_scrns/inthemoment_scrn.png" alt="">
                             <div class="card-img-overlay">
                               <h4 class="card-title">HTML, CSS, JavaScript</h4>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse dicta sequi dignissimos, architecto commodi, nulla dolorem iure totam quibusdam reprehenderit, quia molestias. Explicabo, voluptatum accusantium eaque dolores vitae sunt!</p>
+                              <p class="card-text">Website for In The Moment Photograhy by Lacy Brown. Utilizes Bootstrap 4 + fullpage.js.</p>
                             </div>
                         <div class="links">
-                            <a href="https://github.com/carmaar/InTheMoment" class="badge badge-primary"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+                            <a href="https://github.com/carmaar/InTheMoment" class="badge badge-primary"><i class="fa fa-code" aria-hidden="true"></i> Take a peek!</a>
                         </div>
                     </div>
                 </div>
@@ -88,43 +92,65 @@
                     <div class="card-bg-dark text-white">
                             <img class="card-img" src="concepts_scrns/planty_scrn.png" alt="">
                             <div class="card-img-overlay">
-                              <h4 class="card-title">HTML, CSS, JavaScript, Bootstrap4</h4>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse dicta sequi dignissimos, architecto commodi, nulla dolorem iure totam quibusdam reprehenderit, quia molestias. Explicabo, voluptatum accusantium eaque dolores vitae sunt!</p>
+                              <h4 class="card-title">HTML, CSS</h4>
+                              <p class="card-text">Concepts for several header styles.</p>
                             </div>
                         <div class="links">
-                            <a href="#" class="badge badge-primary"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+                            <a href="#" class="badge badge-primary"><i class="fa fa-code" aria-hidden="true"></i> Take a peek!</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="slide" data-anchor="slide2"> 
-                    <div class="card bg-dark text-white">
-                      <img class="card-img" src="concepts_scrns/house_scrn.png" alt="">
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">HTML, CSS, JavaScript, Bootstrap4</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse dicta sequi dignissimos, architecto commodi, nulla dolorem iure totam quibusdam reprehenderit, quia molestias. Explicabo, voluptatum accusantium eaque dolores vitae sunt!</p>
-                      </div>
-                      <div class="links">
-                            <a href="#" class="badge badge-primary"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+                    <div class="card-bg-dark text-white">
+                            <img class="card-img" src="concepts_scrns/jsQuiz_screen.png" alt="">
+                            <div class="card-img-overlay">
+                              <h4 class="card-title">JavaScript</h4>
+                              <p class="card-text">Simple "messenger" quiz made using vanilla JavaScript. </p>
+                            </div>
+                        <div class="links">
+                            <a href="#" class="badge badge-primary"><i class="fa fa-code" aria-hidden="true"></i> Take a peek!</a>
                         </div>
                     </div>
-                </div> 
+                </div>
+
+                <div class="slide" data-anchor="slide2"> 
+                        <div class="card-bg-dark text-white">
+                                <img class="card-img" src="concepts_scrns/jsQuiz_screen.png" alt="">
+                                <div class="card-img-overlay">
+                                  <h4 class="card-title">HTML, CSS </h4>
+                                  <p class="card-text">Online storefront for vintage/used/antique items. </p>
+                                </div>
+                            <div class="links">
+                                <a href="#" class="badge badge-primary"><i class="fa fa-code" aria-hidden="true"></i> Take a peek!</a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div><!-- END SECTION -->
 
         <!-- ABOUT PAGE -->
 
         <div id="about" class="section" data anchor="slide3">
 
-            <div class="container-fluid">
-                    <h1>Who's she?</h1>
-                        <p>Front-end web developer with a focus in minimalistic design, quality in small details, and content with a purpose.</p>
+            <div id="aboutBox" class="container-fluid">
+                    <h1 class="wow fadeInLeft">Who's she?</h1>
+                    <p>Web development student.</p>
 
-                        <p>I care about intuitive websites that make a difference. Let’s create something powerful.</p>
+                    <!-- !!!!!! jan 5: add drop down box for strengths maybe -->
 
-                        <p><em>HTML/CSS, JavaScript, Sass, PHP, MySql, jQuery, Wordpress, Adobe Creative Suites (Photoshop, Illustrator, Dreamweaver, InDesign)</em> </p>                              
+                    <h3>MY GALLUP STRENGTHS</h3>  
+                    <ul class="str">
+                        <li>Empathy</li>
+                        <li>Intelleciton</li>
+                        <li>Adaptability</li>
+                        <li>Developer</li>
+                        <li>Connectedness</li>
+                    </ul>                
+                    
                 <footer>
                         <a href = "mailto: carly.pennock@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> carly.pennock@gmail.com</a>
-
                 </footer>
             </div>
             </div> <!-- END SECTION-->
@@ -153,50 +179,6 @@
 
 <!-- END FULLPAGE CALL -->
 
-<!-- PEEKHEADER -->
-
-<script>
-
-    // Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-
-</script>
     
 </body>
 

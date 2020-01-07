@@ -1,5 +1,6 @@
 body {
-  background-color: #eeeeee;
+  background-image: url(bg.jpeg);
+  background-size: cover;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
 }
@@ -16,37 +17,46 @@ a {
 }
 
 #projects {
-  background-color: #acc6aa;
+  background-color: #244553;
 }
 
 #projects h1 {
-  margin-top: 100px;
-  margin-left: 20%;
+  padding: 1em;
   position: absolute;
+  text-decoration-line: #a5a5a5;
 }
 
 .container-fluid {
+  background-color: #244553;
+  padding: 2em;
   width: 100%;
 }
 
 .card-bg-dark {
-  margin: 2em;
-}
-
-.card-bg-dark {
+  margin: 5em;
+  height: 28em;
   border-radius: 5px;
   background-color: white;
   padding: 2em;
 }
 
+.card-title {
+  color: #1a1a1a;
+}
+
+.card-img {
+  float: left;
+  width: 50%;
+  margin: 1em;
+}
+
+.card-text {
+  color: #244553;
+}
+
 .fp-slides p {
   font-size: 15px;
   padding: 0;
-}
-
-#projects h1 {
-  margin: 0;
-  text-align: center;
 }
 
 h1 {
@@ -59,24 +69,8 @@ h2 {
   font-size: 1.5em;
 }
 
-.fp-controlArrow {
+h4 .fp-controlArrow {
   margin: 0;
-}
-
-#about {
-  overflow-y: auto;
-  text-align: center;
-  text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.178);
-}
-
-#about em {
-  background-color: rgba(142, 165, 160, 0.562);
-  padding: 1em;
-}
-
-#about p {
-  font-size: 1.5em;
-  padding: 1em;
 }
 
 footer {
@@ -96,7 +90,7 @@ footer a:hover {
   text-decoration: none;
 }
 
-/* NAV */
+/* NAV
 
 .logo {
   width: 15vh;
@@ -133,7 +127,7 @@ ul li a {
 ul li a:hover {
   color: #71a0a5;
   transition: 0.4s ease;
-}
+} */
 
 /* LANDING ICONS */
 
@@ -155,7 +149,7 @@ ul li a:hover {
 
 .container-fluid {
   justify-content: center;
-  background-color: #acc6aa;
+  background-color: #244553;
   width: 75%;
   box-shadow: 10px 10px 7px #dadada;
 }
@@ -163,6 +157,7 @@ ul li a:hover {
 h1,
 h2 {
   display: flex;
+  font-size: 5em;
   justify-content: center;
   color: #eeeeee;
   font-family: "Playfair Display SC";
@@ -175,6 +170,8 @@ h2 {
 h3 {
   padding: 1em;
   font-size: 15px;
+  color: white;
+  font-style: normal;
 }
 
 p {
@@ -249,29 +246,51 @@ h4 {
   transform: translateY(10px);
 }
 
-img {
-  padding: 0 5em 0 5em;
-  float: left;
-  width: 50%;
+/* ABOUT PAGE */
+
+#about {
+  overflow-y: auto;
+  text-align: center;
+  text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.178);
 }
 
-/* ABOUT PAGE */
+#aboutBox {
+  height: 90%;
+}
+
+#about em {
+  background-color: #244553;
+  padding: 1em;
+}
+
+#about p {
+  font-size: 1.5em;
+  padding: 1em;
+}
 
 #about h3 {
   font-size: 1.5em;
   font-family: "Playfair Display SC";
   font-weight: 900;
-  font-style: italic;
 }
 
-#about h4 {
+.str {
   font-family: "Zilla Slab";
-  font-style: normal;
-  color: rgb(36, 36, 36);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 2em;
+  color: white;
 }
 
-.nav-up {
-  top: -40px;
+.str li {
+  padding: 1.5em;
+  border-radius: 5px 5px 5px;
+  background-color: rgba(207, 207, 207, 0.164);
+  text-decoration: white;
 }
 
 /* MEDIA QUERIES */
@@ -288,6 +307,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .container-fluid {
+    background-color: #244553;
     width: 100%;
   }
 
@@ -324,5 +344,16 @@ img {
   h2 {
     text-align: center;
     font-size: 1.5em;
+  }
+
+  .str {
+    margin: 0;
+    padding: 0;
+  }
+
+  .str li {
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.5em;
   }
 }
