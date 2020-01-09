@@ -24,6 +24,9 @@ a {
   transition: all 0.2s;
   transform-origin: 50% 50%;
 }
+
+.fa-github:hover,
+.fa-linkedin:hover,
 .fa-html5:hover,
 .fa-css3:hover,
 .fa-js-square:hover,
@@ -45,8 +48,8 @@ a {
 }
 
 #projects h1 {
-  padding: 1em;
-  position: absolute;
+  margin-top: 4em;
+  font-size: 4em;
   text-decoration-line: #a5a5a5;
 }
 
@@ -157,8 +160,10 @@ ul li a:hover {
 
 .box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: auto;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: #f2f6f6;
 }
 
 .container-fluid {
@@ -168,17 +173,20 @@ ul li a:hover {
   box-shadow: 10px 10px 7px #dadada;
 }
 
-h1,
-h2 {
+h1 {
   display: flex;
   font-size: 5em;
   justify-content: center;
-  color: #eeeeee;
+  color: #f2f6f6;
   font-family: "Playfair Display SC";
 }
 
 h2 {
-  color: #71a0a5;
+  font-size: 2em;
+  color: #b16960;
+  font-family: monospace;
+  padding: 2em;
+  text-shadow: 0.5px 2px 1px #724b46;
 }
 
 p {
@@ -207,8 +215,8 @@ h4 {
 
 .badge {
   display: inline-block;
+  padding: 1.5em;
   min-width: 10px;
-  padding: 0.5em 1em;
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1;
@@ -217,7 +225,7 @@ h4 {
   background-color: #b16960;
   border-radius: 5px;
   transition: 0.4s ease;
-  margin: 0;
+  margin: 1.5em;
   font-family: "Playfair Display SC";
 }
 
@@ -310,6 +318,10 @@ h4 {
 /* MOBILE */
 
 @media only screen and (max-width: 37.5em) {
+  #aboutBox {
+    overflow: scroll;
+  }
+
   .container-fluid {
     background-color: #244553;
     width: 100%;
